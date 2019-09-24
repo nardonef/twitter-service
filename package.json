@@ -1,0 +1,26 @@
+{
+  "name": "twitter-service",
+  "version": "1.0.0",
+  "description": "service for scraping twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sls offline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nardonef/twitter-service.git"
+  },
+  "author": "Frank Nardone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nardonef/twitter-service/issues"
+  },
+  "homepage": "https://github.com/nardonef/twitter-service#readme",
+  "dependencies": {
+    "aws-sdk": "^2.528.0",
+    "lodash": "^4.17.15",
+    "serverless-offline": "^5.11.0",
+    "twitter": "^1.7.1"
+  }
+}

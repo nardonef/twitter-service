@@ -25,6 +25,7 @@ const formatTweets = (tweets) => {
                     id: _.get(tweet, 'id', null),
                     created_at: date.getTime(),
                     user: _.get(tweet, 'user.screen_name', null),
+                    profile_image: _.get(tweet, 'user.profile_image_url_https', null),
                     text: _.get(tweet, 'text', null),
                 })
             }
@@ -51,6 +52,7 @@ const saveToDynamo = async (items) => {
 
 const main = async () => {
     const tweets = await getTweets();
+    console.log(tweets);
     const formattedTweets = formatTweets(tweets);
     await saveToDynamo(formattedTweets);
 };

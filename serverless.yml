@@ -14,7 +14,10 @@ functions:
     handler: src/writeTweetsToDynamo.handler
     method: get
     events:
-    - schedule: rate(2 hours)
+#    - schedule: rate(2 hours)
+    - http:
+        path: saveTweets
+        method: get
 
   getTweets:
     handler: src/api/getTweets.handler

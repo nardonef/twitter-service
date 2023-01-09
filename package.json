@@ -20,7 +20,7 @@
   "dependencies": {
     "aws-sdk": "^2.528.0",
     "lodash": "^4.17.15",
-    "serverless-offline": "^5.11.0",
+    "serverless-offline": "^12.0.4",
     "twitter": "^1.7.1"
   }
 }
